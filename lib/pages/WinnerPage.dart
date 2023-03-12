@@ -46,31 +46,37 @@ class Winner extends StatelessWidget {
               ],
             ),
             actions: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: blue,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10))),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacementNamed("homePage");
-                  },
-                  child: Text('Close'),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 30),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: blue,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10))),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacementNamed("feedback");
-                  },
-                  child: Text('Leave feedback'),
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: blue,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10))),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacementNamed("homePage");
+                      },
+                      child: Text('Close'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 30),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: blue,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10))),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacementNamed("feedback");
+                      },
+                      child: Text('Leave feedback'),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

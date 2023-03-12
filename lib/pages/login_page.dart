@@ -50,18 +50,21 @@ class _LoginPageState extends State<LoginPage> {
               height: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 270, bottom: 10),
-              child: Text(
-                "Hello",
-                style: TextStyle(
-                    fontSize: 23, fontWeight: FontWeight.bold, color: blue),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(right: 119),
-              child: Text(
-                "Login first to continue .",
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+              padding: const EdgeInsets.only(right: 105),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Hello",
+                    style: TextStyle(
+                        fontSize: 23, fontWeight: FontWeight.bold, color: blue),
+                  ),
+                  Text(
+                    "Login first to continue .",
+                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                  ),
+                ],
               ),
             ),
             SizedBox(

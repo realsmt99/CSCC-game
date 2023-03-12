@@ -17,13 +17,15 @@ class Looserpage extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
             elevation: 2,
-            title: Padding(
-              padding: const EdgeInsets.only(left: 80),
-              child: Text(
-                'You Lost ',
-                style: TextStyle(
-                    color: blue, fontWeight: FontWeight.w800, fontSize: 25),
-              ),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'You Lost ',
+                  style: TextStyle(
+                      color: blue, fontWeight: FontWeight.w800, fontSize: 25),
+                ),
+              ],
             ),
             content: Column(
               mainAxisSize: MainAxisSize.min,
@@ -36,20 +38,31 @@ class Looserpage extends StatelessWidget {
                 ),
                 Center(
                   child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: Text(
-                      '     Sorry, you didn\'t get     enough correct answers. ',
+                      ' Sorry, you didn\'t  ',
                       style: TextStyle(fontSize: 19),
                     ),
                   ),
                 ),
-                Icon(Icons.keyboard_arrow_down_rounded),
                 Padding(
-                  padding: const EdgeInsets.only(top: 00),
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
                   child: Text(
-                    'We would love to hear \nyour thoughts on your\n experience with us.',
-                    style: TextStyle(fontSize: 16),
+                    ' get enough correct   ',
+                    style: TextStyle(fontSize: 19),
                   ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  child: Text(
+                    ' answers  ',
+                    style: TextStyle(fontSize: 19),
+                  ),
+                ),
+                Icon(Icons.keyboard_arrow_down_rounded),
+                Text(
+                  'We would love to hear \nyour thoughts on your\n experience with us.',
+                  style: TextStyle(fontSize: 16),
                 ),
               ],
             ),

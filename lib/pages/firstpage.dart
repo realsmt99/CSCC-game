@@ -96,13 +96,10 @@ class _DailyPageState extends State<DailyPage> {
                                   SizedBox(
                                     height: 10,
                                   ),
-                                  Text(
-                                    "Coding wariors",
-                                    style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w500,
-                                        color: black),
-                                  ),
+                                  Image.asset(
+                                    "images/game-console.png",
+                                    width: 45,
+                                  )
                                 ],
                               ),
                             ),
@@ -155,7 +152,40 @@ class _DailyPageState extends State<DailyPage> {
                 ),
               ),
               SizedBox(
-                height: 400,
+                height: 350,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Transform(
+                      alignment: Alignment.center,
+                      transform:
+                          Matrix4.rotationZ(1.3), // Set the angle in radians
+                      child: Center(
+                        child: Image.asset(
+                          "images/tic-tac-toe.png",
+                          width: 150,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Transform(
+                      alignment: Alignment.center,
+                      transform:
+                          Matrix4.rotationZ(0.3), // Set the angle in radians
+                      child: Center(
+                        child: Image.asset(
+                          "images/game-over.png",
+                          width: 150,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 200,
               ),
               Text(
                 "Swipingg".toUpperCase(),
@@ -166,7 +196,39 @@ class _DailyPageState extends State<DailyPage> {
                 size: 60,
               ),
               SizedBox(
-                height: 600,
+                height: 25,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Transform(
+                      alignment: Alignment.center,
+                      transform: Matrix4.rotationZ(5.9),
+                      child: Center(
+                        child: Image.asset(
+                          "images/game-console (1).png",
+                          width: 150,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Transform(
+                      alignment: Alignment.center,
+                      transform:
+                          Matrix4.rotationZ(0.3), // Set the angle in radians
+                      child: Center(
+                        child: Image.asset(
+                          "images/quiz.png",
+                          width: 150,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 200,
               ),
               Center(
                 child: Column(

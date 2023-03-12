@@ -45,7 +45,7 @@ class _OptionsggState extends State<Optionsgg> {
   int questions = 0;
   double lenearindicator = 0.1428;
   Container? lessgo(int? index) {
-    if (index == 1 && questions < 7 && blocknanswers == true) {
+    if (index == 1 && questions <= 5 && blocknanswers == true) {
       return Container(
         padding: EdgeInsets.all(20),
         child: ElevatedButton(
